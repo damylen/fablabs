@@ -87,7 +87,7 @@ ready = ->
 
   if $('body').hasClass('c-labs a-map') or $('body').hasClass('a-embed')
     L.mapbox.accessToken = 'pk.eyJ1IjoidG9tYXNkaWV6IiwiYSI6ImRTd01HSGsifQ.loQdtLNQ8GJkJl2LUzzxVg'
-    map = L.mapbox.map('map', 'mapbox.light', { scrollWheelZoom: true, zoomControl: false }).setView([
+    map = L.mapbox.map('map', 'mapbox.light', { scrollWheelZoom: true, zoomControl: false, minZoom: 3 }).setView([
       50
       0
     ], 2)
