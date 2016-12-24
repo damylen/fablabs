@@ -59,6 +59,11 @@ module ApplicationHelper
     end
   end
 
+
+  def filestack(url, options)
+    "https://process.filestackapi.com/resize=#{options}/#{url}"
+  end
+
   def hocho(img, options)
     return if img.blank?
     url = "https://davinci.fablabs.io"
